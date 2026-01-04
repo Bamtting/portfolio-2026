@@ -14,9 +14,11 @@ html {
 }
 
 body {
+  position: relative;
+  font-size: 1rem;
   line-height: 1.5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family:'SUIT',-apple-system,BlinkMacSystemFont,'Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',Arial,sans-serif;
+  letter-spacing: -0.04em;
 }
 
 /* 리스트 점 제거 */
