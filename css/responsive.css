@@ -1,3 +1,26 @@
-@media (max-width: 1024px) { html { font-size: 15px; } }
-@media (max-width: 768px)  { html { font-size: 14px; } }
-@media (max-width: 360px)  { html { font-size: 13px; } }
+
+@media (max-width: 1300px)  {
+    .inner{
+        padding: 0 15px;
+    }
+} 
+@media (max-width: 850px)  { 
+    section{
+        padding: 65px 0;
+    }
+    .main .txt{
+        padding: 0 15px;
+    }
+    .about_left{
+        width: 100%;
+    }
+    .about_right{
+        width: 100%;
+    }
+    .about .about_box{
+        flex-direction: column;
+    }
+    .project_list li{
+        width: 100%;
+    }
+}
