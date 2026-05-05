@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 퍼블리셔 곽승민 포트폴리오</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-16x16.png">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="./js/common.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
       <div class="inner">
         <div class="logo">
           <a href="#!">
-            <img src="./img/logo.png" alt="웹 퍼블리셔 곽승민, 포트폴리오" />
+            <img src="./img/logo.png" alt="웹 퍼블리셔 곽승민 포트폴리오" />
           </a>
         </div>
         <nav class="gnb">
@@ -26,13 +30,29 @@
             <li><a href="#contact">연락하기</a></li>
           </ul>
         </nav>
+        <nav class="mo_gnb">
+          <div class="ham_box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="gnb_box">
+            <div class="dim"></div>
+            <ul>
+              <li><a href="#main">메인</a></li>
+              <li><a href="#about">소개</a></li>
+              <li><a href="#project">작업물</a></li>
+              <li><a href="#contact">연락하기</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <div class="wrap">
       <section id="main" class="main">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
           <div class="txt">
-            <h1>웹 퍼블리셔 포트폴리오</h1>
+            <h1>곽승민 포트폴리오</h1>
             <p>
               안녕하세요, 웹 퍼블리셔 2년차 곽승민입니다. <br />
               서비스 환경에 최적화된 기술을 학습하고 적용하며, <br />
@@ -52,7 +72,7 @@
 
             <div class="about_right">
               <!-- 자기소개 -->
-              <div class="about_intro">
+              <div class="about_intro" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                 <h2 class="tit">자기 소개</h2>
                 <div class="bio">
                   <p>안녕하세요. 2년차 웹 퍼블리셔 곽승민입니다.</p>
@@ -67,7 +87,7 @@
                 </div>
               </div>
               <!-- about_intro -->
-              <div class="experience">
+              <div class="experience" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                 <h2 class="tit">경력</h2>
                 <ul>
                   <li>
@@ -199,10 +219,10 @@
           <div class="left">
             <img src="../img/character.png" alt="캐릭터">
           </div>
-          <div class="right">
+          <div class="right" data-aos="zoom-in"  data-aos-duration="1000">
             <p>포트폴리오를 끝까지 봐주셔서 감사합니다.</p>
             <div class="btns">
-              <a href="mailto:ekekektmdals@email.com">이메일</a>
+              <a href="mailto:ekekektmdals@gmail.com">이메일</a>
               <a href="https://github.com/bamtting" target="_blank">깃허브</a>
             </div>
           </div>
@@ -213,5 +233,8 @@
       <p>상업용 목적이 아닌 포트폴리오용으로 제작되었습니다.</p>
       <p>© Copyright 2026 Seungmin Kwak.</p>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

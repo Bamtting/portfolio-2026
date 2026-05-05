@@ -8,6 +8,100 @@
     section{
         padding: 65px 0;
     }
+    header .gnb{
+        display: none;
+    }
+    header .mo_gnb{
+        display: block !important;
+        width: 30px;
+        height: 30px;
+    }
+    header .mo_gnb .ham_box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    header .mo_gnb span{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 2px;
+        transition: all .3s;
+    }
+    header .mo_gnb span:nth-child(2){
+        margin: 10px 0;
+    }
+    header .mo_gnb span::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    header .mo_gnb.active span::after{
+        background-color: #000;
+    }
+    header .mo_gnb.active span:nth-child(1){
+        top: 12px;
+        transform: rotate(45deg);
+    }
+    header .mo_gnb.active span:nth-child(2):after{
+        display: none;
+    }
+    header .mo_gnb.active span:nth-child(3){
+        top: -12px;
+        transform: rotate(-45deg);
+    }
+    header .mo_gnb .dim{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        padding: 3%;
+        width: 50%;
+        height: 150vh;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all .3s;
+        z-index: 9;
+    }
+    header .mo_gnb.active .dim{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    header .mo_gnb ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        display: block;
+        width: 50%;
+        height: 150vh;
+        padding: 3%;
+        background-color: #fff;
+        color: #000;
+        transition: all .3s;
+        z-index: 9;
+    }
+    header .mo_gnb.active ul{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    header .mo_gnb ul li{
+        font-size: 24px;
+        font-weight: 500;    
+    }
+    header .mo_gnb ul li + li{
+        margin-top: 20px;
+    }
     .main .txt{
         padding: 0 15px;
     }
