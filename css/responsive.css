@@ -8,6 +8,9 @@
     section{
         padding: 65px 0;
     }
+    header .logo{
+        width: 90px;
+    }
     header .gnb{
         display: none;
     }
