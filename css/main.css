@@ -79,6 +79,7 @@
 }
 .project_list li .txt .p_tit{
     font-size: clamp(16px, calc(0.82vw + 13px), 20px);
+    font-weight: 700;
 }
 .project_list li .txt .p_info{
     font-size: clamp(15px, calc(0.61vw + 12.8px), 18px);
