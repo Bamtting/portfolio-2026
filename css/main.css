@@ -64,6 +64,12 @@
 .experience .skills{
     margin-top: 20px;
 }
+.experience .skills strong{
+    font-size: clamp(16px, calc(0.82vw + 13px), 20px);
+}
+.experience .skills p{
+    margin-top: 10px;
+}
 
 .project .tit{
     text-align: center;
