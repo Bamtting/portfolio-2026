@@ -27,7 +27,6 @@
 .about .about_box{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 50px;
 }
 .about_left{
@@ -48,6 +47,13 @@
 .about_right .bio p{
     margin-top: 10px;
 }
+.experience ul li{
+    margin-top: 20px;
+}
+.experience ul li + li{
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
 .experience .career_item{
     display: flex;
     align-items: center;
@@ -55,9 +61,10 @@
     font-size: clamp(16px, calc(0.82vw + 13px), 20px);
     margin-bottom: 10px;
 }
-.experience ul li{
+.experience .skills{
     margin-top: 20px;
 }
+
 .project .tit{
     text-align: center;
     margin-bottom: 30px;
