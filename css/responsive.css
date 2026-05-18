@@ -89,6 +89,7 @@
         width: 50%;
         height: 150vh;
         padding: 3%;
+        padding-top: 80px;
         background-color: #fff;
         color: #000;
         transition: all .3s;
@@ -119,5 +120,14 @@
     }
     .project_list li{
         width: 100%;
+    }
+    .popup_link_web{
+        display: none;
+    }
+    .popup_link_mo{
+        display: block;
+        padding: 20px;
+        background-color: #151515;
+        text-align: center;
     }
 }

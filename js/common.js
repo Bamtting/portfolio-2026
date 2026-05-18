@@ -5,4 +5,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
     hamBox.addEventListener("click", ()=>{
         moGnb.classList.toggle("active");
     });
+    const openBtn = document.querySelectorAll(".project .pop_open");
+    const closeBtn = document.querySelectorAll(".project .close_btn");
+    const popUpItem = document.querySelectorAll(".project .pop");
+    openBtn.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            popUpItem[index].classList.add("active");
+        });
+    });
+    closeBtn.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            popUpItem[index].classList.remove("active");
+        });
+    });
 });
